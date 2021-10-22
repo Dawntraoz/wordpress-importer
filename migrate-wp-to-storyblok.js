@@ -14,7 +14,7 @@ const wp2storyblok = new Wp2Storyblok('https://wp2.storyblok.com/wp-json', {
   blocks_mapping: [
     {
       name: 'core/heading',
-      new_block_name: 'heading',
+      new_block_name: 'core-heading',
       schema_mapping: {
         'attrs.level': 'level',
         'attrs.content': 'content'
@@ -22,21 +22,21 @@ const wp2storyblok = new Wp2Storyblok('https://wp2.storyblok.com/wp-json', {
     },
     {
       name: 'core/paragraph',
-      new_block_name: 'paragraph',
+      new_block_name: 'core-paragraph',
       schema_mapping: {
         'attrs.content': 'content'
       }
     },
     {
       name: 'core/quote',
-      new_block_name: 'quote',
+      new_block_name: 'core-quote',
       schema_mapping: {
-        'attrs.content': 'content'
+        'attrs.value': 'content'
       }
     },
     {
       name: 'core/image',
-      new_block_name: 'image',
+      new_block_name: 'core-image',
       schema_mapping: {
         'attrs.url': 'image'
       }
